@@ -1,1 +1,0 @@
-# gt7-svg-vectorizer-
