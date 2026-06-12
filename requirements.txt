@@ -1,0 +1,5 @@
+streamlit>=1.35
+pillow>=10.0
+numpy>=1.26
+cairosvg>=2.7
+scour>=0.38
