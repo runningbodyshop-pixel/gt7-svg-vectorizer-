@@ -1,0 +1,5 @@
+streamlit>=1.35
+pillow>=10.0
+numpy>=1.26
+opencv-python-headless>=4.10
+vtracer>=0.6.11
