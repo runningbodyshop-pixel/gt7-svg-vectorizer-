@@ -1,0 +1,4 @@
+streamlit>=1.36,<2
+pillow>=10,<12
+numpy>=1.26,<3
+vtracer==0.6.11
