@@ -1,0 +1,29 @@
+# スマホ用 Inkscape風 オートトレース
+
+PNG/JPG/WebPをアップロードして、Inkscapeの「ビットマップのトレース」に近いSVGを作るStreamlitアプリです。
+
+## 使い方
+
+1. GitHubにこの4ファイルを置く
+   - `app.py`
+   - `requirements.txt`
+   - `packages.txt`
+   - `README.md`
+2. Streamlit Community Cloudでデプロイ
+3. スマホのブラウザから開く
+4. 画像をアップロードしてSVGをダウンロード
+
+## モード
+
+- 白黒トレース / Potrace
+  - Inkscapeの通常トレースに近いモード
+- カラー多重スキャン / Potrace
+  - InkscapeのMultiple scans / Colorsに近いモード
+- 中心線トレース / Autotrace
+  - InkscapeのCenterline tracingに近いモード
+  - ただし、サーバーに`autotrace`コマンドが必要です
+
+## Streamlit Cloudで使える範囲
+
+`packages.txt`に`potrace`を入れているので、Potrace系モードは動かしやすいです。
+AutotraceはDebian/Ubuntu環境でパッケージとして入らない場合があるため、中心線トレースまで完全に使いたい場合はDocker対応のホスティングを推奨します。
